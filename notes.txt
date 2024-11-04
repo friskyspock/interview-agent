@@ -1,0 +1,32 @@
+Main Question:
+Can you tell me how we can reverse words in string 'I am a boy'?
+
+Ideal Answer:
+#### Strategy
+Two Pointers.
+
+#### Explanation
+First, the algorithm splits the words of the sentence from a string into an array.\
+The algorithm also initializes low and high pointers as the first and last indexes of the array.\
+Then, the algorithm iterates the array.
+
+For each iteration, the algorithm swaps the words at the low and high pointers,\
+increments and decrements the low and high pointers respectively,\
+and repeats until the low pointer is greater than the high pointer.
+
+The result is all words of the sentence reversed in the array.\
+The words are joined as a string again with a single space separating the words, and the string is returned.
+
+##### Time Complexity
+The algorithm updates the low and high pointers a number of times proportional to the number of words. \
+Therefore, the time complexity of the algorithm is O(n), where n is the number of words.
+
+##### Space Complexity
+The algorithm splits the words from a sentence into an array. The array is auxiliary space and has length equal to the number of words.\
+Therefore, the auxiliary space complexity of the algorithm is O(n).
+
+Sub-Questions:
+1. What type of data structure is used here?
+2. Is candidates approach correct for answer?
+3. Is candidate using brute force approach here?
+4. Is candidate using pointers in answer?
